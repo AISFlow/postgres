@@ -1,4 +1,4 @@
-FROM postgres:17-bookworm
+FROM postgres:18-bookworm
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime && \
     sed -i 's/# ko_KR.UTF-8 UTF-8/ko_KR.UTF-8 UTF-8/' /etc/locale.gen && \
